@@ -16,7 +16,12 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
-    
+    <style>
+		th, td {
+			padding: 10px;
+		}
+		.hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
+	</style>
 
 </head> 
 
@@ -65,35 +70,126 @@
     
     <div class="main-wrapper">
 	    	    
-	    <article class="about-section py-5">
+	    <section class="blog-list px-3 py-5 p-md-5">
 		    <div class="container">
-			    <h2 class="title mb-3">About Me</h2>
-			    
-			    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
-			    <figure><img class="img-fluid" src="assets/images/about-me.jpg" alt="image"></figure>
-			    <h5 class="mt-5">About The Blog</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
-			    <h5 class="mt-5">My Skills and Experiences</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    <h5 class="mt-5">Side Projects</h5>
-			    <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-			    
-			    <figure><a href="https://made4dev.com"><img class="img-fluid" src="assets/images/promo-banner.jpg" alt="image"></a></figure>
+			    <!-- Page Content  -->
+				<div id="content">
+				    <h3>Work Experience</h3>
+					<table>
+					  <tr valign="top">
+						<td><b>Flatiron Health</b>, New York, New York
+						<br>Software Engineer, Practice Management Team
+						<ul>
+						  <li>Developed features within OncoEMR (Flatiron’s electronic health record) 
+						  to facilitate the prior authorization process, 
+						  which enables oncology clinics to be reimbursed for chemotherapy</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">August 2019 - present</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Princeton University</b>, Princeton, New Jersey 
+						<br>COS 461: Computer Networks Grader
+						<ul>
+						  <li>Graded biweekly assignments and answered 
+						  online student questions on Piazza</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Spring 2019</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Princeton University</b>, Princeton, New Jersey 
+						<br>COS 445: Economics and Computing Undergraduate Teaching Assistant and Grader
+						<ul>
+						  <li>Held weekly office hours to help students with problem sets</li>
+						  <li>Graded biweekly assignments</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Spring 2019</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Princeton University</b>, Princeton, New Jersey 
+						<br>COS 340: Reasoning About Computation Lab Teaching Assistant
+						<ul>
+						  <li>Held weekly office hours to help students with problem sets</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Fall 2018</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Flatiron Health</b>, New York, New York 
+						<br>Software Engineering Intern, Practice Management Team
+						<ul>
+						  <li>Created new feature with C# and Javascript for OncoEMR 
+						  (Flatiron’s electronic health record) to show complete history 
+						  of an order to allow physicians to understand patient history</li>
+						  <li>Used Elasticsearch to store and fetch edit history 
+						  and used React and Redux to render fetched information 
+						  within OncoEMR</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Summer 2018</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Princeton University</b>, Princeton, New Jersey 
+						<br>COS 340: Reasoning About Computation Lab Teaching Assistant
+						<ul>
+						  <li>Held weekly office hours to help students with problem sets</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Spring 2018</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Google</b>, New York, New York 
+						<br>Engineering Practicum Intern, Structured Data Team, Research and Machine Intelligence Group
+						<ul>
+						  <li>Designed and implemented an end-to-end machine learning pipeline to predict correlations 
+						  between fact-checking articles and news articles in Google Search and News </li>
+						  <li>Generated over 4000 pairs of fact-checking articles and news articles 
+						  (using Flume and C++) for training data</li>
+						  <li>Trained ML models that matched fact-checking articles to debunked/verified
+						  material and achieved an accuracy rate of 86%</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Summer 2017</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Microsoft</b>, Redmond, Washington 
+						<br>Explorer Intern, SQL Engineering and Learning Systems Team
+						<ul>
+						  <li>As a software engineer, created a website with Javascript and HTML 
+						  to display cost information from multiple databases about internal 
+						  Azure subscriptions and enable teams to understand and adjust their 
+						  spending</li>
+						  <li>As a program manager, oversaw project to create algorithm to 
+						  predict how many machines were needed for testing to reduce VM 
+						  resource consumption and save time for engineers</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Summer 2016</td>
+					  </tr>
+					  <tr valign="top">
+						<td><b>Applied Communication Sciences</b>, Basking Ridge, New Jersey 
+						<br>Research Associate
+						<ul>
+						  <li>Performed research in active authentication to alert users 
+						  to unauthorized use of their smartphones</li>
+						  <li>Created app usage features from public data set 
+						  and used mutual information for feature selection in Java</li>
+						  <li>Used SVM (LIBSVM library) to learn the app usage behavior 
+						  of a phone’s authorized user</li>
+						  <li>Published results at 2015 IEEE MIT Undergraduate Research 
+						  Technology Conference</li>
+						</ul>
+					  	</td>
+						<td class="hideextra" style="text-align:right">Summer 2015</td>
+					  </tr>
+					  
+					</table>
+					
+					
+				</div>
 		    </div>
-	    </article><!--//about-section-->
-	    
-	    <section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <h2 class="heading">Newsletter</h2>
-			    <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
-			    <form class="signup-form form-inline justify-content-center pt-3">
-                    <div class="form-group">
-                        <label class="sr-only" for="semail">Your email</label>
-                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-		    </div><!--//container-->
 	    </section>
 	    
 	    <footer class="footer text-center py-2 theme-bg-dark">
